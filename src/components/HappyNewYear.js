@@ -4,13 +4,13 @@ import Snowfall from "react-snowfall";
 import musicFile from "./opening_doraemon.mp3"; // Replace with your music file path
 
 function HappyNewYear() {
-  const words = ["Happy", "New", "Year", "Oliur_Saheen"];
+  const words = ["Happy", "New", "Year", "Jyoti"];
 
   const uniqueStyles = {
     Happy: { color: "red", textShadow: "2px 2px 8px gold" },
     New: { color: "blue", textShadow: "2px 2px 8px silver" },
     Year: { color: "green", textShadow: "2px 2px 8px yellow" },
-    Oliur_Saheen: { color: "purple", textShadow: "2px 2px 8px pink" },
+    Jyoti: { color: "purple", textShadow: "2px 2px 8px pink" },
   };
 
   const balloonEffect = {
@@ -28,7 +28,7 @@ function HappyNewYear() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handleDragStart = (word) => {
-    if (word === "Oliur_Saheen" && !isPlaying) {
+    if (word === "Jyoti" && !isPlaying) {
       audioRef.current.play();
       setIsPlaying(true);
 
@@ -72,7 +72,7 @@ function HappyNewYear() {
             bottom: window.innerHeight * 0.4,
           }}
           style={{
-            fontSize: "100px",
+            fontSize: "calc(5vw + 20px)", // Responsive font size
             fontFamily: "'Comic Sans MS', cursive",
             margin: "auto",
             position: "absolute",
