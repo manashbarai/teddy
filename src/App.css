@@ -101,3 +101,17 @@
   cursor: grab;
   user-select: none;
 }
+.heart {
+  font-size: 5rem;
+  animation: fall linear infinite;
+}
+.falling-hearts{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
