@@ -7,10 +7,10 @@ function HappyNewYear() {
   const words = ["Happy", "New", "Year", "Jyoti"];
 
   const uniqueStyles = {
-    Happy: { color: "red", textShadow: "2px 2px 8px gold" },
+    Happy: { color: "purple", textShadow: "2px 2px 8px gold" },
     New: { color: "blue", textShadow: "2px 2px 8px silver" },
     Year: { color: "green", textShadow: "2px 2px 8px yellow" },
-    Jyoti: { color: "purple", textShadow: "2px 2px 8px pink", position: "relative" },
+    Jyoti: { color: "red", textShadow: "2px 2px 8px pink", position: "relative" },
   };
 
   const audioRef = useRef(new Audio(musicFile));
@@ -84,7 +84,7 @@ function HappyNewYear() {
             bottom: window.innerHeight * 0.4,
           }}
           style={{
-            fontSize: "calc(5vw + 20px)", // Responsive font size
+            fontSize: "calc(5vw + 70px)", // Responsive font size
             fontFamily: "'Comic Sans MS', cursive",
             margin: "auto",
             position: "absolute",
